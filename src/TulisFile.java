@@ -3,10 +3,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-/*Buat kode program untuk menampilkan nama dari semua file yang ada di dalam
-suatu direktori. Petunjuk: gunakan perulangan dan method list() atau
-listFiles(). */
-
 public class TulisFile {
     public static void main(String[] args) {
         var keyboard = new Scanner(System.in);
@@ -22,7 +18,7 @@ public class TulisFile {
         File file = new File("test.txt");
         showFileSize(file);
         listIsiFolder(file);
-        
+        hapusFolder();
     }
     static void showFileSize(File file) {
         long length = file.length();
